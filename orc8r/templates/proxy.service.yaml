@@ -25,6 +25,7 @@ spec:
     app.kubernetes.io/component: proxy
 {{ include "selector-labels" . | indent 4 }}
   type: {{ .Values.proxy.service.type }}
+  loadBalancerIP: {{ .Values.proxy.service.loadBalancerIP }}
   ports:
     {{- with .Values.proxy.service.port.clientcert }}
     - name: clientcert

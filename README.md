@@ -1,5 +1,7 @@
 # Facebook magma helm charts
 
+Demo Edition!
+
 ## Adding this helm repo in OSM
 
 ```bash
